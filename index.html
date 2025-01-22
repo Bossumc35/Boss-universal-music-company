@@ -89,8 +89,7 @@
 </head>
 <body>
     <header>
-        <!-- Logo dosyasını yüklediğinizde bu yola dikkat edin -->
-        <img src="Adsiz_tasarim.png" alt="Boss Universal Music Logo">
+        <img src="logo.png" alt="Boss Universal Music Logo">
         <h1>Boss Universal Music Company</h1>
         <p>Profesyonel müzik prodüksiyon hizmetleri</p>
     </header>
@@ -107,7 +106,6 @@
     <nav>
         <a href="#services">Hizmetler</a>
         <a href="#contact">İletişim</a>
-        <!-- Admin panel dosyası yüklenmediyse bu çalışmaz -->
         <a href="admin.html">Admin Panel</a>
     </nav>
 
@@ -161,6 +159,15 @@
                 <h3>Dijital Yayın Hizmetleri</h3>
                 <p>Eserinizi yapım şirketine sunuyor, platformlarda yayınlıyoruz.</p>
                 <p class="price">8000 TL</p>
+            </div>
+
+            <div class="service pr-custom">
+                <h3>PR Hizmetleri</h3>
+                <p>Fiyatınızı kendiniz belirleyin (min. 500 TL):</p>
+                <form>
+                    <label for="pr-price">Fiyat Girin (TL):</label>
+                    <input type="number" id="pr-price" name="pr-price" min="500">
+                </form>
             </div>
         </section>
     </div>
