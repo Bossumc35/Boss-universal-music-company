@@ -85,62 +85,12 @@
             padding: 5px;
             font-size: 14px;
         }
-        .admin-login, .admin-dashboard {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #222;
-            border: 1px solid #444;
-            border-radius: 5px;
-        }
-        .admin-login h2, .admin-dashboard h2 {
-            margin-top: 0;
-            color: #E94E77;
-        }
-        .admin-login label, .admin-dashboard label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        .admin-login input, .admin-dashboard input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #444;
-            border-radius: 5px;
-            background: #333;
-            color: #fff;
-        }
-        .admin-login button, .admin-dashboard button {
-            width: 100%;
-            padding: 10px;
-            background: #E94E77;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .admin-login button:hover, .admin-dashboard button:hover {
-            background: #d43f6e;
-        }
-        .sales-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        .sales-table th, .sales-table td {
-            border: 1px solid #444;
-            padding: 10px;
-            text-align: left;
-        }
-        .sales-table th {
-            background: #333;
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="/mnt/data/Adsız tasarım.png" alt="Boss Universal Music Logo">
+        <!-- Logo dosyasını yüklediğinizde bu yola dikkat edin -->
+        <img src="Adsiz_tasarim.png" alt="Boss Universal Music Logo">
         <h1>Boss Universal Music Company</h1>
         <p>Profesyonel müzik prodüksiyon hizmetleri</p>
     </header>
@@ -157,6 +107,7 @@
     <nav>
         <a href="#services">Hizmetler</a>
         <a href="#contact">İletişim</a>
+        <!-- Admin panel dosyası yüklenmediyse bu çalışmaz -->
         <a href="admin.html">Admin Panel</a>
     </nav>
 
@@ -211,64 +162,11 @@
                 <p>Eserinizi yapım şirketine sunuyor, platformlarda yayınlıyoruz.</p>
                 <p class="price">8000 TL</p>
             </div>
-
-            <div class="service pr-custom">
-                <h3>PR Hizmetleri</h3>
-                <p>Fiyatınızı kendiniz belirleyin (min. 500 TL):</p>
-                <form>
-                    <label for="pr-price">Fiyat Girin (TL):</label>
-                    <input type="number" id="pr-price" name="pr-price" min="500">
-                </form>
-            </div>
         </section>
     </div>
 
     <footer class="footer">
         <p>&copy; 2025 Boss Universal Music Company. Tüm hakları saklıdır.</p>
     </footer>
-
-    <!-- Admin Panel Login Page -->
-    <div class="admin-login">
-        <h2>Admin Panel Giriş</h2>
-        <form action="admin-dashboard.html" method="post">
-            <label for="username">Kullanıcı Adı:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Şifre:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Giriş Yap</button>
-        </form>
-    </div>
-
-    <!-- Admin Panel Dashboard Page -->
-    <div class="admin-dashboard">
-        <h2>Satış Paneli</h2>
-        <p>Gerçekleşen satışlar aşağıda listelenmiştir:</p>
-        <table class="sales-table">
-            <thead>
-                <tr>
-                    <th>Hizmet</th>
-                    <th>Fiyat</th>
-                    <th>Tarih</th>
-                    <th>Müşteri Adı</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Basic Vocal Mix</td>
-                    <td>2500 TL</td>
-                    <td>22/01/2025</td>
-                    <td>Ali Veli</td>
-                </tr>
-                <tr>
-                    <td>Full Production</td>
-                    <td>15000 TL</td>
-                    <td>21/01/2025</td>
-                    <td>Ahmet Yılmaz</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 </body>
 </html>
